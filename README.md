@@ -12,3 +12,12 @@ conda env update --prefix ./env --file environment.yml  --prune
 ```
 sed '/abc/d;/efg/d' a.txt > a.log    // 删除含字符串"abc"或“efg"的行，将结果保存到a.log
 ```
+- Give your ML model an interface
+```
+import gradio as gr
+
+def greet(name):
+  return "Hello " + name + "!"
+
+gr.Interface(fn=greet, inputs="text", outputs="text").launch()
+```
