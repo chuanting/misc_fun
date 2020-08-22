@@ -1,1 +1,0 @@
-idx = pd.date_range(start='02/10/2015', end='03/02/2015',freq='30T', closed='left')
