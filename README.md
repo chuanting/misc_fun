@@ -21,3 +21,13 @@ def greet(name):
 
 gr.Interface(fn=greet, inputs="text", outputs="text").launch()
 ```
+-Install PyFlux
+```
+pip install git+https://github.com/RJT1990/pyflux
+```
+
+- scripts to combine ARIMA results
+
+```
+sed '' *.txt >> 123.csv
+```
