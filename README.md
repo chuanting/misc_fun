@@ -31,3 +31,35 @@ pip install git+https://github.com/RJT1990/pyflux
 ```
 sed '' *.txt >> 123.csv
 ```
+
+- Latex commands to make subfigures
+
+```
+\begin{figure*}
+\centering
+
+\tabskip=0pt
+\valign{#\cr
+  \hbox{%
+    \begin{subfigure}[b]{.65\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{world_v7_cut}
+    \caption{BSs distribution over the world.}
+    \end{subfigure}%
+  }\cr
+  \noalign{\hfill}
+  \hbox{%
+    \begin{subfigure}{.35\textwidth}
+    \centering
+    \raisebox{.2\textwidth}{
+    \includegraphics[width=0.95\textwidth]{fig_2_all}
+    }
+    \caption{Left: CDF. Right: PDF}
+    \end{subfigure}%
+  }\cr
+}
+\caption{Full caption}
+
+\end{figure*}
+
+```
