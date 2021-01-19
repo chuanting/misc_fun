@@ -63,3 +63,7 @@ sed '' *.txt >> 123.csv
 \end{figure*}
 
 ```
+
+- scp commands
+
+scp local_file username@remote_host:folder_name/
